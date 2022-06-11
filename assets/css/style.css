@@ -219,8 +219,7 @@ header{
     height: 370px;
     justify-content: space-between;
     align-items: center;
-    width: 83%;
-    border-radius: 5px;
+    width: 83%;    
 }
 .flex--position{
     /* justify-content: center; */
@@ -266,6 +265,7 @@ header{
     justify-content: center;
     width: 623px;
     padding: 0 36px;
+    border-radius: 5px;
 }
 .benefits__col-img--gap{
     background-color: var(--clr-green);
@@ -277,6 +277,7 @@ header{
 }
 .benefits__col-img--gap img{
     width: 295px;
+    border-radius: 5px;
 }
 .benefits__col-text{
     width: 416px;
@@ -329,12 +330,89 @@ header{
 .benefits__iphone{
     max-width: 426px;
 }
-/* .benefits__col-img{
-    background-image: url('../img/macbook.png');
-} */
 .gap-row{
   gap: 61px;  
 }
-.space-col{
-
+/*
+***
+* BENEFITS SECTION
+***
+*/
+.pricint__title{
+    color: var(--clr-black);
+    font-family: var(--font-raleway);
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+.pricing_box--display{
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.pricing__box{
+    width: 372px;    
+    border-radius: 18px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;   
+}
+.pricing__box--danger{
+    border: 1px solid var(--clr-redish);
+}
+.pricing__box--primary{
+    border: 1px solid var(--clr-primary);
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+.pricing__box--info{
+    border: 1px solid var(--clr-green);
+}
+.pricing__box__title{
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--clr-black);
+    margin-top: 34px;
+}
+.pricing__box__price{
+    font-family: var(--font-open-sans);
+    font-size: 4.6rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: var(--clr-redish);
+    margin: 14px 0 69px 0;
+}
+.pricing__list__item{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: var(--font-open-sans);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--clr-black);
+}
+.pricing__list__item:last-of-type{
+    margin-bottom: 81px;
+}
+.btn__price{
+    padding: 16px 57px;
+    border-radius: 23px;
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: var(--clr-white);    
+    position: absolute;
+    bottom: -26px;
+}
+.btn__price--danger{
+    background-color: #EB476E;  
+}
+.btn__price--primary{
+    background-color: var(--clr-primary);  
+}
+.btn__price--info{
+    background-color: var(--clr-green);  
 }
